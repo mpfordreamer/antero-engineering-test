@@ -1,0 +1,23 @@
+[
+    {
+        "ruleId": "UNIQUE_IDS",
+        "description": "All component IDs must be unique",
+        "appliesTo": "all",
+        "severity": "ERROR",
+        "check": "duplicateIds"
+    },
+    {
+        "ruleId": "VALID_CONNECTION",
+        "description": "Pipes must connect existing valves",
+        "appliesTo": "connection",
+        "severity": "ERROR",
+        "check": "validConnection"
+    },
+    {
+        "ruleId": "FLOW_001",
+        "description": "Upstream valve flow must not exceed downstream valve flow",
+        "appliesTo": "connection",
+        "severity": "WARNING",
+        "check": "flowCheck"
+    }
+]
